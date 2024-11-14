@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/avatar.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>ShareSpace - Feed</title>
+</head>
+
+<body>
+
+    <main id="main">
+        <div class="create-post-container">
+            <div class="create-post-header">
+                <i id="arrow" class="ri-arrow-left-line" onclick="arrow()"></i>
+                <span id="cp">Create Post</span>
+                <i id="arrow" class="ri-arrow-left-line" style="visibility: hidden;"></i>
+            </div>
+
+            <textarea class="post-textarea" spellcheck="false" placeholder="What's on your mind?"
+                id="textArea"></textarea>
+
+            <div class="post-icons">
+                <i class="ri-image-fill"></i>
+                <i class="ri-attachment-line"></i>
+            </div>
+
+            <div class="post-footer">
+                <select class="post-privacy">
+                    <option>Public</option>
+                    <option>Friends</option>
+                    <option>Only Me</option>
+                </select>
+                <div>
+                    <button class="button cancel-btn" onclick="cancel()">Cancel</button>
+                    <button id="loading" class="button publish-btn" onclick="publish()">Publish</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="homeWrapper">
+        <nav>
+            <span id="txt-logo" style="font-weight: 100;">Share<span style="font-weight: 600;">Space.</span></span>
+
+            <label class="switch">
+                <input type="checkbox" onclick="changeTheme()">
+                <span class="slider"></span>
+            </label>
+
+        </nav>
+        <div class="home-cont">
+            <div class="left">
+                <div class="banner">
+                    <img
+                        src="https://media.licdn.com/dms/image/v2/D5616AQGKK5dO8dZNrg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1704815226339?e=2147483647&v=beta&t=_ZqXHcCqvGWTxm4J27kJUJsuWyULedB6D2DA7R96Yyc">
+                </div>
+                <div class="avatar">
+                    <img src="assets/avatar.svg">
+                </div><br><br><br><br><br>
+                <div id="userName">Arhum Hussain</div>
+
+
+                <div class="socials">
+                    <span><a href="https://github.com/Arham7432" target="_blank"><i
+                                class="ri-github-fill"></i></a></span>
+                    <span><a href="https://pk.linkedin.com/in/arhamhussain" target="_blank"><i
+                                class="ri-linkedin-fill"></i></a></span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="feed-heading">
+                    <h1>Feed</h1>
+                    <button onclick="recruitMain()" title="Create Post"
+                        class="group cursor-pointer outline-none hover:rotate-90 duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"
+                            class="stroke-zinc-400 fill-none group-hover:fill-zinc-800 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300">
+                            <path
+                                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                                stroke-width="1.5" class="icon-path"></path>
+                            <path d="M8 12H16" stroke-width="1.5" class="icon-path"></path>
+                            <path d="M12 16V8" stroke-width="1.5" class="icon-path"></path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <div id="notyet">
+                    <img id="mars" src="assets/waterMark.png">
+                </div>
+
+                <div id="feedContent"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
