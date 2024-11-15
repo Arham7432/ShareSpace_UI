@@ -1,5 +1,6 @@
 let userInput = prompt("Input Fullname here")
 userName.innerHTML = userInput
+names.innerHTML = userInput
 
 function arrow() {
     main.style.display = "none"
@@ -58,10 +59,4 @@ function changeTheme() {
 document.addEventListener("DOMContentLoaded", () => {
     changeTheme();
 });
-
-
-
-
-
-
 
