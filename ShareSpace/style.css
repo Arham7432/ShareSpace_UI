@@ -582,4 +582,22 @@ body.light-theme .socials i {
     #feedContent {
         max-height: 475px;
     }
+
+    .custom-post {
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+
+
+    .publish-btn,
+    .cancel-btn {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 8px 16px;
+    }
+
+    .post-privacy{
+        font-size: 13px;
+    }
+
 }
