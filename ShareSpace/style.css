@@ -157,6 +157,10 @@ body.light-theme .cancel-btn:hover {
     background-color: #ddd;
 }
 
+.none {
+    display: none;
+}
+
 
 main {
     width: 100%;
@@ -500,6 +504,82 @@ body.light-theme .socials i {
     }
 
     .socials {
-        margin-top: 480px;
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #main {
+        padding: 8px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .home-cont {
+        flex-direction: column;
+        justify-content: normal;
+        gap: 25px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        height: 75%;
+    }
+
+    #userName {
+        display: none;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    body.light-theme #names {
+        border-radius: 6px;
+        color: white;
+        background: #2222229c;
+        padding: 2px 12px;
+    }
+
+    #names {
+        border-radius: 6px;
+        color: #222;
+        background: #ffffffbf;
+        padding: 2px 12px;
+    }
+
+
+    #notyet img {
+        width: 65vw;
+    }
+
+    .none {
+        display: flex;
+    }
+
+    .mobileAvatar {
+        display: flex;
+        color: black;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .mobileAvatar img {
+        width: 50px;
+    }
+
+    #feedContent {
+        max-height: 475px;
     }
 }
