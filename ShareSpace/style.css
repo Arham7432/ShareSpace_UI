@@ -530,7 +530,7 @@ body.light-theme .socials i {
 
     .right {
         width: 100%;
-        height: 75%;
+        height: 65%;
     }
 
     #userName {
@@ -580,12 +580,16 @@ body.light-theme .socials i {
     }
 
     #feedContent {
-        max-height: 475px;
+        max-height: 68%;
     }
 
     .custom-post {
         font-size: 16px !important;
         font-weight: 500 !important;
+    }
+
+    .feed-heading h1{
+        font-size: 30px;
     }
 
 
@@ -596,7 +600,7 @@ body.light-theme .socials i {
         padding: 8px 16px;
     }
 
-    .post-privacy{
+    .post-privacy {
         font-size: 13px;
     }
 
